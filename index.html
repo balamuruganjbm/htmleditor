@@ -35,6 +35,12 @@
             <button class="tool-items fa fa-clone" onclick="copy()"></button>
             <button class="tool-items fa  fa-list-ol" onclick="document.execCommand('insertOrderedList',false,'')"></button>
             <button class="tool-items fa  fa-list" onclick="document.execCommand('insertUnorderedList',false,'')"></button>
+            <SELECT class="addbtn"name="element">
+              <OPTION value="button">Button</OPTION>
+              <OPTION value="text">Textbox</OPTION>
+              <OPTION value="radio">Radio</OPTION>
+            </SELECT>
+            <button class="tool-items" onclick="buttoncreation(document.querySelector('.addbtn').value)">Button</button>
         </div>        
         <div class="center">
             <div class="editor" contenteditable>
