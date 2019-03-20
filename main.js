@@ -15,6 +15,16 @@ getText.addEventListener("click", function() {
   content.textContent = old;
 });
 
+function buttoncreation(type){
+  var btnelement = document.createElement("input");
+  var value = prompt("Enter the value for button");
+  var name = prompt("Enter the name for button"); 
+  btnelement.setAttribute("type", type);
+  btnelement.setAttribute("value", value);
+  btnelement.setAttribute("name", name);
+  editorContent.appendChild(btnelement);
+}
+
 function link() {
   var url = prompt("Enter the URL");
   document.execCommand("createLink", false, url);
